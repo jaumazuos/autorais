@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Explicando Determinantes</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-    </style>
+  <title>Explicando Determinantes</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>O que são Determinantes?</h1>
-    <p>Um determinante é um valor escalar associado a uma matriz quadrada. Ele fornece informações sobre as propriedades da matriz e é frequentemente usado em várias aplicações matemáticas e científicas.</p>
-
-    <h2>Como Calcular um Determinante</h2>
-    <p>O cálculo de um determinante depende do tamanho da matriz. Para matrizes 2x2, o determinante é calculado usando a fórmula: <br>
-    <code>|A| = ad - bc</code></p>
-    
-    <p>Para matrizes maiores, você pode usar a expansão de Laplace, método de cofatores ou diagonalização, dependendo das propriedades da matriz.</p>
-
-    <h2>Aplicações dos Determinantes</h2>
-    <p>Determinantes são usados em:</p>
-    <ul>
-        <li>Sistemas de equações lineares</li>
-        <li>Diagonalização de matrizes</li>
-        <li>Álgebra linear e geometria</li>
-        <li>Transformações lineares</li>
-        <li>Teoria dos números</li>
-        <!-- Adicione mais aplicações aqui -->
-    </ul>
-
-    <h2>Importância Matemática</h2>
-    <p>Os determinantes desempenham um papel fundamental na álgebra linear e têm aplicações em uma variedade de campos matemáticos e científicos.</p>
-
-    <footer>
-        <p>Este é um site simples de exemplo sobre determinantes.</p>
-    </footer>
+  <header>
+    <h1>Explicando Determinantes</h1>
+  </header>
+  <main>
+    <section class="explanation">
+      <h2>O que são Determinantes?</h2>
+      <p>Um determinante é um valor escalar que pode ser associado a uma matriz quadrada.</p>
+    </section>
+    <section class="explanation">
+      <h2>Como Calcular Determinantes?</h2>
+      <p>Existem várias maneiras de calcular determinantes, incluindo o método da eliminação de Gauss e regras de Sarrus para matrizes 3x3.</p>
+    </section>
+    <section class="example">
+      <h2>Exemplo de Cálculo</h2>
+      <p>Vamos calcular o determinante da matriz:</p>
+      <pre>
+        | 3  1 |
+        | 2 -2 |
+      </pre>
+      <p>O determinante é dado por: <span class="determinant">3*(-2) - 1*2 = -8</span>.</p>
+    </section>
+  </main>
 </body>
 </html>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.explanation, .example {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.determinant {
+  font-weight: bold;
+  color: #e74c3c;
+}
+</style>
