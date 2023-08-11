@@ -1,0 +1,1 @@
+Area de Autorias Linguagens🔠🔤
